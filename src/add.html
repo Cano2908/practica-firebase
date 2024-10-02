@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Usuarios</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="consult.html">Consultar</a></li>
+            <li><a href="add.html">Agregar</a></li>
+        </ul>
+    </nav>
+
+    <h1>Usuarios</h1>
+    <h2>Agregar Usuario</h2>
+
+    <form id="UserForm">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="firstName">Nombre:</label>
+                <input type="text" id="firstnameAdd" name="firstNameAdd" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Apellido:</label>
+                <input type="text" id="lastnameAdd" name="lastnameAdd" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="usernameAdd" name="usernameAdd" required>
+            </div>
+            <div class="form-group">
+                <label for="institution">Institución:</label>
+                <input type="text" id="institutionAdd" name="institutionAdd" required>
+            </div>
+        </div>
+        <button type="submit">Agregar</button>
+    </form>
+    
+    <script type="module" src="./js/usuario.crud.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Editar Usuario</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="consult.html">Consultar</a></li>
+                <li><a href="add.html">Agregar</a></li>
+            </ul>
+        </nav>
+        <h1>Usuarios</h1>
+
+        <h2>Editar Usuario</h2>
+        <form id="editUserForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">Nombre:</label>
+                    <input type="text" id="firstname" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Apellido:</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="username">Nombre de usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="institution">Institución:</label>
+                    <input type="text" id="institution" name="institution" required>
+                </div>
+            </div>
+            <button type="submit">Editar</button>
+        </form>
+        <script type="module" src="./js/usuario.crud.js"></script>
+    </body>
+    
+</html>
